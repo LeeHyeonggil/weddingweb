@@ -15,7 +15,7 @@ body{
 .hero{
     width:100%;
     height:700px;
-    background:url('../images/leonardo-miranda-dvF6s1H1x68-unsplash.jpg') no-repeat center;
+    background:url('../images/main.jpg') no-repeat center;
     background-size:cover;
 }
 .text-center{
@@ -37,17 +37,17 @@ body{
     clear:both;
 }
 
-.container>div{
+.hero .container>div{
     margin-top:30px;
     border:1px solid #fff;
 }
-.container>.hero-left{
+.hero .container>.hero-left{
    float:left; 
    width:40%;
    height:125px;
    border-right:none;
 }
-.container>.hero-logo{
+.hero .container>.hero-logo{
    float:left;
    width:20%;
    height:125px;
@@ -67,7 +67,7 @@ body{
     padding-top:8px;
     letter-spacing:1px;
 }
-.container>.hero-right{
+.hero .container>.hero-right{
   float:left;  
   width:40%;
   height:125px;
@@ -102,7 +102,7 @@ nav.container a{
     width:300px;
 }
 .container>.flbox{
-    background:url(../images/icon.png) no-repeat center;
+    background:url(../images/flow2.png) no-repeat center;
     background-size:cover;
     width:230px;
     height:120px;
@@ -147,9 +147,13 @@ h2.subtitle{
    color:#fff;
    display:none;
 }
-.text-box h3{
-    font-size:20px;
-    margin-top:50%;
+.box1 .text-box h3{
+    font-size:25px;
+    margin-top:150px;
+}
+.box2 .text-box h3{
+    font-size:25px;
+    margin-top:250px;
 }
 .text-box p{
     font-size:30px;
@@ -159,26 +163,159 @@ h2.subtitle{
     display:block;
 }
 .btn{
-    display: block;
-    width: 280px;
-    height: 50px;
-    text-align: center;
+    display:block;
+    width:280px;
+    height:50px;
+    text-align:center;
     text-transform: uppercase;
-    color: white;
-    background: rgb(138,207,154);
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    line-height: 50px;
-    margin: 30px auto 100px;
-    cursor: pointer;
-    text-decoration: none;
+    color:white;
+    background:rgb(138,207,154);
+    border-radius:5px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:3px;
+    line-height:50px;
+    margin:30px auto 100px;
+    cursor:pointer;
+    text-decoration:none;
 }
 .btn:hover{
-    background: rgb(138,207,154);
+    background:rgb(109, 172, 124);
 }
 
-/*
-rgb(237,242,239)
-*/
+/*** section whoami ****/
+section.whoami{
+   background-color:rgb(237, 242, 239);
+   padding-top:50px;
+   
+}
+.leftbox{
+    width:60%;
+    float:left;
+    position:relative;
+}
+.leftbox img{
+    position:absolute;
+}
+img.aboutme{
+    top:25px;
+}
+img.aboutme2{
+    top: 280px;
+    right:60px;
+    border:15px solid rgb(237, 242, 239);
+    z-index:2;
+}
+.rightbox{
+    width:40%;
+    float:right;
+}
+.rightbox h1{
+    font-size: 36px;
+    line-height:1.5;
+}
+.rightbox p{
+    line-height:1.6;
+}
+.whoami .btn{
+    margin-left:0;
+}
+
+/*******packages**********/
+/*** 반응형 정사각형 만드는 공식 **/
+.package-box{
+    width: 100%;
+    position: relative;
+}
+.package-box::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.inner img{
+    width: 100%;
+    height: auto;
+}
+.packages .aurore{
+    font-size: 30px;
+}
+.packages .btn{
+    
+    display:block;
+    width:500px;
+    height:50px;
+    text-align:center;
+    text-transform: uppercase;
+    color:white;
+    background:rgb(138,207,154);
+    border-radius:5px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:3px;
+    line-height:50px;
+    margin:30px auto 100px;
+    cursor:pointer;
+    text-decoration:none;
+    
+    
+}
+.packages .btn:hover{
+    background:rgb(109, 172, 124);
+}
+/*********together*******/
+.together{
+    width:100%;
+    height:400px;
+    background:url('../images/leonardo-miranda-dvF6s1H1x68-unsplash.jpg') no-repeat center;
+    background-size:cover;
+    
+}
+.together .title{
+    font-family: 'Unna', serif;
+    font-weight: 600; 
+    color:#fff;
+    text-align:center;
+    font-size: 33px; 
+    
+}
+.love{
+    margin-top: 200px;
+}
+.love .rightbox{
+    background-color: #e7e9e3;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+.lovw .btn{
+    
+    display:block;
+    width:500px;
+    height:50px;
+    text-align:center;
+    text-transform: uppercase;
+    color:white;
+    background:rgb(138,207,154);
+    border-radius:5px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:3px;
+    line-height:50px;
+    margin:30px auto 100px;
+    cursor:pointer;
+    text-decoration:none;
+    
+    
+}
+.lovw .btn:hover{
+    background:rgb(109, 172, 124);
+}
